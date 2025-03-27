@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: #FEF3E8;
+    position: relative;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 93px;
+    height: 100vh;
+    background: #B07154;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1001;
+}
+
+.logo-container {
+    width: 93px;
+    height: 71px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1002;
+}
+
+.logo-container img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.sidebar-item {
+    width: 93px;
+    height: 48px;
+    background: white;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    padding: 12px;
+}
+
+.sidebar-item.home {
+    top: 158px;
+}
+
+.sidebar-item.list {
+    top: 226px;
+}
+
+.sidebar-item.book {
+    top: 294px;
+}
+
+.sidebar-item.logout {
+    top: calc(100vh - 100px);
+    background: white;
+}
+
+.icon-image {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    display: block;
+}
+
+.card-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.main-content {
+    margin-left: 93px;
+    padding: 20px;
+    padding-top: 91px;
+    /* Add padding to account for fixed header */
+}
+
+.header {
+    height: 71px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 93px;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.user-icon {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.user-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.user-name {
+    color: #D88A52;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22.4px;
+}
+
+.user-role {
+    color: #B07154;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16.8px;
+}
+
+.time {
+    text-align: right;
+    margin-right: 70px;
+}
+
+.current-time {
+    color: #B07154;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22.4px;
+    margin-bottom: 2px;
+}
+
+.current-date {
+    color: #B07154;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18.2px;
+}
+
+.settings-icon {
+    width: 38px;
+    height: 38px;
+    position: absolute;
+    right: 17px;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.settings-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.card-icon {
+    width: 127px;
+    height: 140px;
+    background: rgba(176, 113, 84, 0.48);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-content {
+    flex: 1;
+}
+
+.card-title {
+    color: #B07154;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 49px;
+}
+
+.quote-card {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 40px;
+}
+
+.quote-text {
+    color: #B07154;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 49px;
+    margin-bottom: 20px;
+}
+
+.quote-author {
+    color: #B07154;
+    font-size: 20px;
+    font-weight: 400;
+}
